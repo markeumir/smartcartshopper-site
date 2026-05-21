@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SmartCart Shopper Privacy Policy — your data stays on your device. No tracking, no ads, no cloud.">
+<title>Privacy Policy — SmartCart Shopper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#0C0C0C;--bg2:#141421;--surface:#1A1A28;--surface2:#22223A;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#FFFFFF;--text2:#9CA3AF;--text3:#6B7280;
+  --purple:#7C3AED;--purple-l:rgba(124,58,237,0.16);--purple-b:rgba(124,58,237,0.3);
+  --green:#34D399;--amber:#F59E0B;--amber-l:rgba(245,158,11,0.12);
+  --teal:#2DD4BF;--red:#F87171;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.6;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,12,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo span{font-size:15px;font-weight:800;color:var(--text);}
+.nav-links{display:flex;align-items:center;gap:8px;}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;transition:color .15s,background .15s;}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface2);}
+
+.page-wrap{max-width:760px;margin:0 auto;padding:90px 24px 80px;}
+
+.page-header{margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--border);}
+.page-header .label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--purple);margin-bottom:10px;}
+.page-header h1{font-size:clamp(28px,4vw,40px);font-weight:900;letter-spacing:-.8px;margin-bottom:12px;}
+.page-header p{font-size:15px;color:var(--text2);line-height:1.65;}
+.last-updated{font-family:'Space Mono',monospace;font-size:11px;color:var(--text3);margin-top:10px;}
+
+/* SUMMARY CARDS */
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:48px;}
+.sum-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start;}
+.sum-ico{font-size:22px;flex-shrink:0;margin-top:2px;}
+.sum-ttl{font-size:13px;font-weight:700;margin-bottom:3px;}
+.sum-txt{font-size:12px;color:var(--text2);line-height:1.5;}
+.sum-card.good{border-color:rgba(52,211,153,0.2);}
+.sum-card.good .sum-ttl{color:var(--green);}
+
+/* POLICY SECTIONS */
+.policy-section{margin-bottom:44px;scroll-margin-top:80px;}
+.policy-section h2{font-size:19px;font-weight:800;letter-spacing:-.3px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.policy-section p{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:12px;}
+.policy-section ul,.policy-section ol{padding-left:20px;margin-bottom:12px;}
+.policy-section li{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:4px;}
+.policy-section li strong{color:var(--text);}
+
+/* HIGHLIGHT BOXES */
+.green-box{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);border-radius:12px;padding:14px 18px;margin:14px 0;}
+.green-box p,.green-box li{color:var(--green)!important;}
+.green-box strong{color:#fff!important;}
+.amber-box{background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.2);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:14px;color:var(--amber);line-height:1.65;}
+.amber-box strong{color:#fff;}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0;}
+.data-table th{background:var(--surface2);padding:10px 14px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);border-bottom:1px solid var(--border2);}
+.data-table td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text2);}
+.data-table tr:last-child td{border-bottom:none;}
+.data-table td:first-child{font-weight:600;color:var(--text);}
+.tick{color:var(--green);}
+.cross{color:var(--red);}
+
+/* CONTACT */
+.contact-card{background:var(--surface);border:1px solid var(--border2);border-radius:16px;padding:24px;margin-top:8px;}
+.contact-card h3{font-size:15px;font-weight:700;margin-bottom:12px;}
+.contact-row{display:flex;gap:10px;align-items:center;margin-bottom:8px;font-size:14px;}
+.contact-row a{color:#A78BFA;text-decoration:none;}
+.contact-row a:hover{text-decoration:underline;}
+
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 24px;margin-top:40px;}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-brand{display:flex;align-items:center;gap:10px;}
+.footer-brand span{font-size:13px;font-weight:700;color:var(--text2);}
+.footer-links a{font-size:13px;color:var(--text3);text-decoration:none;margin-right:18px;}
+.footer-links a:hover{color:var(--text2);}
+.footer-copy{font-size:12px;color:var(--text3);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="data:image/png;base64,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" alt="SmartCart" style="width:32px;height:32px;border-radius:9px;">
+      <span>SmartCart</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="userguide.html">User Guide</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="https://github.com/markeumir" target="_blank">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <div class="label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>SmartCart Shopper is designed from the ground up to protect your privacy. This policy explains exactly what data is collected, where it goes, and who can see it. The short answer: everything stays on your device.</p>
+    <div class="last-updated">Last updated: 14 August 2026 · Version 6.0</div>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="summary-grid">
+    <div class="sum-card good"><div class="sum-ico">✅</div><div><div class="sum-ttl">No data collected</div><div class="sum-txt">We collect no personal information, usage data or analytics.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">📵</div><div><div class="sum-ttl">No ads or trackers</div><div class="sum-txt">Zero advertising SDKs, zero third-party analytics, zero tracking pixels.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">📱</div><div><div class="sum-ttl">On-device only</div><div class="sum-txt">Your shopping list, prices and history never leave your phone.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">📷</div><div><div class="sum-ttl">Camera — scan only</div><div class="sum-txt">Camera is used to scan barcodes. No photos taken or stored.</div></div></div>
+  </div>
+
+  <!-- 1. WHO WE ARE -->
+  <div class="policy-section" id="who">
+    <h2>1. Who We Are</h2>
+    <p>SmartCart Shopper is developed and maintained by <strong>Mark Eumir Turingan</strong>, operating under the brand <strong>MiRo Digital Tools</strong>, based in Berlin, Germany.</p>
+    <p>This privacy policy applies to all versions of SmartCart Shopper — the Google Play version, the External/web version, and any future releases.</p>
+  </div>
+
+  <!-- 2. WHAT DATA WE COLLECT -->
+  <div class="policy-section" id="data">
+    <h2>2. What Data We Collect</h2>
+    <div class="green-box">
+      <p><strong>We do not collect, transmit or store any personal data on external servers.</strong></p>
+    </div>
+    <p>All data created while using SmartCart is stored exclusively in your device's local storage (localStorage and IndexedDB). This includes:</p>
+    <table class="data-table">
+      <tr><th>Data type</th><th>Where stored</th><th>Sent externally?</th></tr>
+      <tr><td>Shopping list items</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Price book entries</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Session history / receipts</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Budget settings</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Currency preference</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Offline database (Pro)</td><td>Device IndexedDB</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Pro unlock status</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+      <tr><td>Device ID (External version)</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 3. CAMERA -->
+  <div class="policy-section" id="camera">
+    <h2>3. Camera Permission</h2>
+    <p>SmartCart requests camera access for one purpose only: <strong>scanning barcodes</strong>.</p>
+    <ul>
+      <li>The camera is activated only when you explicitly tap the scan button.</li>
+      <li>No photos, video or screenshots are taken, saved or transmitted.</li>
+      <li>The camera feed is processed entirely on-device, frame by frame, to detect barcode patterns.</li>
+      <li>The camera stops as soon as you close the scanner or navigate away.</li>
+    </ul>
+    <div class="amber-box">Camera permission can be revoked at any time in your device Settings → Apps → SmartCart → Permissions.</div>
+  </div>
+
+  <!-- 4. THIRD-PARTY SERVICES -->
+  <div class="policy-section" id="third-party">
+    <h2>4. Third-Party Services</h2>
+    <p>SmartCart contacts external services only for product lookup and live exchange rates. <strong>No personal data is included in any of these requests.</strong></p>
+    <table class="data-table">
+      <tr><th>Service</th><th>Purpose</th><th>Data sent</th><th>Privacy policy</th></tr>
+      <tr>
+        <td>Open Food Facts</td>
+        <td>Food product lookup by barcode</td>
+        <td>Barcode number only</td>
+        <td><a href="https://world.openfoodfacts.org/privacy" style="color:#A78BFA" target="_blank">openfoodfacts.org/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Open Beauty Facts</td>
+        <td>Beauty/cosmetics lookup by barcode</td>
+        <td>Barcode number only</td>
+        <td><a href="https://world.openbeautyfacts.org" style="color:#A78BFA" target="_blank">openbeautyfacts.org</a></td>
+      </tr>
+      <tr>
+        <td>UPC Item DB</td>
+        <td>General product lookup by barcode</td>
+        <td>Barcode number only</td>
+        <td><a href="https://www.upcitemdb.com/privacy" style="color:#A78BFA" target="_blank">upcitemdb.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Frankfurter.app</td>
+        <td>Live FX exchange rates (Pro, if enabled)</td>
+        <td>Currency code only</td>
+        <td><a href="https://www.frankfurter.app" style="color:#A78BFA" target="_blank">frankfurter.app</a></td>
+      </tr>
+      <tr>
+        <td>GitHub Releases</td>
+        <td>Offline database download (Pro)</td>
+        <td>None (standard HTTPS download)</td>
+        <td><a href="https://docs.github.com/en/site-policy/privacy-policies" style="color:#A78BFA" target="_blank">github.com privacy</a></td>
+      </tr>
+    </table>
+    <p>Barcode numbers are not personal data and cannot be used to identify you. No IP address, device identifier or session token is ever included in API requests.</p>
+  </div>
+
+  <!-- 5. GOOGLE PLAY / REVENUECAT -->
+  <div class="policy-section" id="billing">
+    <h2>5. In-App Purchases (Google Play Version)</h2>
+    <p>Pro upgrades on the Google Play version are processed by <strong>Google Play Billing</strong> via <strong>RevenueCat</strong>. SmartCart does not handle payment information directly.</p>
+    <ul>
+      <li>Payment data is handled entirely by Google — see <a href="https://policies.google.com/privacy" style="color:#A78BFA" target="_blank">Google's Privacy Policy</a>.</li>
+      <li>RevenueCat receives a purchase token to verify entitlement — no personal data beyond what Google provides. See <a href="https://www.revenuecat.com/privacy" style="color:#A78BFA" target="_blank">RevenueCat's Privacy Policy</a>.</li>
+      <li>SmartCart stores only a local Pro status flag (true/false) on your device after a verified purchase.</li>
+    </ul>
+  </div>
+
+  <!-- 6. DEVICE ID (EXTERNAL) -->
+  <div class="policy-section" id="deviceid">
+    <h2>6. Device ID (External Version Only)</h2>
+    <p>The external version of SmartCart uses a locally generated Device ID to produce unlock codes for Pro activation.</p>
+    <ul>
+      <li>The Device ID is a <strong>randomly generated value</strong> created on first launch and stored only in your device's localStorage.</li>
+      <li>It is <strong>not</strong> derived from any hardware identifier, IMEI, MAC address or personal data.</li>
+      <li>The Device ID is only transmitted when <strong>you choose to share it</strong> with the developer to request a Pro unlock code.</li>
+      <li>The developer uses it solely to generate your unique unlock code — it is not stored, sold or shared.</li>
+    </ul>
+  </div>
+
+  <!-- 7. DATA RETENTION -->
+  <div class="policy-section" id="retention">
+    <h2>7. Data Retention &amp; Deletion</h2>
+    <p>Since all data is stored on your device, you are in complete control:</p>
+    <ul>
+      <li><strong>Clear app data:</strong> Device Settings → Apps → SmartCart → Storage → Clear Data. This removes everything instantly.</li>
+      <li><strong>Clear specific data:</strong> About tab → Backup &amp; Restore → Clear All Data removes your shopping data while keeping app settings.</li>
+      <li><strong>Uninstalling</strong> SmartCart removes all locally stored data.</li>
+    </ul>
+    <p>We hold no copies of your data on any server — deletion on your device is complete and final.</p>
+  </div>
+
+  <!-- 8. CHILDREN -->
+  <div class="policy-section" id="children">
+    <h2>8. Children's Privacy</h2>
+    <p>SmartCart Shopper does not knowingly collect any personal information from anyone, including children under the age of 13 (or 16 in the EU under GDPR). As no data is collected at all, the app is safe for all ages.</p>
+  </div>
+
+  <!-- 9. GDPR -->
+  <div class="policy-section" id="gdpr">
+    <h2>9. GDPR (EU Users)</h2>
+    <p>SmartCart is developed in Berlin, Germany and is designed to be GDPR-compliant by default. Because we collect no personal data, there is no data processing activity to declare under Articles 13/14 of the GDPR. Specifically:</p>
+    <ul>
+      <li>No lawful basis for processing is required — no processing occurs.</li>
+      <li>No Data Processing Agreement (DPA) is needed with third-party API providers, as only non-personal barcode numbers are transmitted.</li>
+      <li>You have full rights of access, rectification and erasure over your data — exercised entirely through the app itself.</li>
+    </ul>
+  </div>
+
+  <!-- 10. CHANGES -->
+  <div class="policy-section" id="changes">
+    <h2>10. Changes to This Policy</h2>
+    <p>If this privacy policy changes materially, the updated version will be posted at this URL and the "Last updated" date will be revised. Continued use of SmartCart after a policy change constitutes acceptance of the updated terms.</p>
+    <p>Given the no-data-collection nature of this app, significant changes are unlikely.</p>
+  </div>
+
+  <!-- 11. CONTACT -->
+  <div class="policy-section" id="contact">
+    <h2>11. Contact</h2>
+    <p>Questions about this privacy policy or SmartCart's data practices? Get in touch:</p>
+    <div class="contact-card">
+      <h3>Mark Eumir Turingan — MiRo Digital Tools</h3>
+      <div class="contact-row">🌐 <a href="https://facebook.com/markeumir" target="_blank">facebook.com/markeumir</a></div>
+      <div class="contact-row">💙 <a href="mygmail@markeumir.xyz" target="_blank">Email: mygmail@markeumir.xyz</a></div>
+      <div class="contact-row">💻 <a href="https://github.com/markeumir" target="_blank">github.com/markeumir</a></div>
+      <div class="contact-row">📍 Philippines & Germany</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="data:image/png;base64,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" alt="" style="width:26px;height:26px;border-radius:7px;">
+      <span>SmartCart Shopper · MiRo Digital Tools</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="userguide.html">User Guide</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-copy">© 2026 MiRo Digital Tools (Mark Eumir Turingan). All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
