@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SmartCart Shopper Privacy Policy — your data stays on your device. No tracking, no ads, no cloud.">
-<title>Privacy Policy — SmartCart Shopper</title>
+<meta name="description" content="SmartCart Shopper — Data Deletion. Learn how to clear your local data or submit a deletion request for RevenueCat purchase entitlement data.">
+<title>Data Deletion — SmartCart Shopper</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -13,16 +13,17 @@
   --bg:#0C0C0C;--bg2:#141421;--surface:#1A1A28;--surface2:#22223A;
   --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
   --text:#FFFFFF;--text2:#9CA3AF;--text3:#6B7280;
-  --purple:#7C3AED;--purple-l:rgba(124,58,237,0.16);--purple-b:rgba(124,58,237,0.3);
+  --purple:#7C3AED;--purple-d:#6D28D9;--purple-l:rgba(124,58,237,0.16);--purple-b:rgba(124,58,237,0.3);
   --green:#34D399;--amber:#F59E0B;--amber-l:rgba(245,158,11,0.12);
   --teal:#2DD4BF;--red:#F87171;
 }
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.6;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,12,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,12,0.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
 .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo img{width:32px;height:32px;border-radius:9px;}
 .nav-logo span{font-size:15px;font-weight:800;color:var(--text);}
 .nav-links{display:flex;align-items:center;gap:8px;}
 .nav-links a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;transition:color .15s,background .15s;}
@@ -44,30 +45,51 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,12,0.9
 .sum-txt{font-size:12px;color:var(--text2);line-height:1.5;}
 .sum-card.good{border-color:rgba(52,211,153,0.2);}
 .sum-card.good .sum-ttl{color:var(--green);}
+.sum-card.amber{border-color:rgba(245,158,11,0.25);}
+.sum-card.amber .sum-ttl{color:var(--amber);}
 
 /* POLICY SECTIONS */
 .policy-section{margin-bottom:44px;scroll-margin-top:80px;}
 .policy-section h2{font-size:19px;font-weight:800;letter-spacing:-.3px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
 .policy-section p{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:12px;}
 .policy-section ul,.policy-section ol{padding-left:20px;margin-bottom:12px;}
-.policy-section li{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:4px;}
+.policy-section li{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:6px;}
 .policy-section li strong{color:var(--text);}
 
 /* HIGHLIGHT BOXES */
 .green-box{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);border-radius:12px;padding:14px 18px;margin:14px 0;}
-.green-box p,.green-box li{color:var(--green)!important;}
+.green-box p,.green-box li{color:var(--green)!important;font-size:14px;}
 .green-box strong{color:#fff!important;}
 .amber-box{background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.2);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:14px;color:var(--amber);line-height:1.65;}
 .amber-box strong{color:#fff;}
+.purple-box{background:var(--purple-l);border:1px solid var(--purple-b);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:14px;color:#C4B5FD;line-height:1.65;}
+.purple-box strong{color:#fff;}
 
-/* DATA TABLE */
-.data-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0;}
-.data-table th{background:var(--surface2);padding:10px 14px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);border-bottom:1px solid var(--border2);}
-.data-table td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text2);}
-.data-table tr:last-child td{border-bottom:none;}
-.data-table td:first-child{font-weight:600;color:var(--text);}
-.tick{color:var(--green);}
-.cross{color:var(--red);}
+/* METHOD CARDS */
+.method-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px 24px;margin-bottom:16px;transition:border-color .2s;}
+.method-card:hover{border-color:var(--border2);}
+.method-header{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.method-badge{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;flex-shrink:0;}
+.badge-instant{background:rgba(52,211,153,0.12);color:var(--green);border:1px solid rgba(52,211,153,0.25);}
+.badge-email{background:var(--purple-l);color:#C4B5FD;border:1px solid var(--purple-b);}
+.method-title{font-size:16px;font-weight:800;}
+.method-card p{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:10px;}
+.method-card ul{padding-left:20px;}
+.method-card li{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:5px;}
+.method-card li strong{color:var(--text);}
+
+/* STEPS */
+.steps{counter-reset:step;margin:14px 0;}
+.step{display:flex;gap:16px;margin-bottom:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--purple-l);border:1px solid var(--purple-b);color:#C4B5FD;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.step-body{font-size:14px;color:var(--text2);line-height:1.7;}
+.step-body strong{color:var(--text);}
+.step-body code{font-family:'Space Mono',monospace;font-size:12px;background:var(--surface2);padding:2px 7px;border-radius:5px;color:#A78BFA;}
+
+/* EMAIL TEMPLATE */
+.email-template{background:var(--surface2);border:1px solid var(--border2);border-radius:12px;padding:18px 20px;margin:14px 0;font-family:'Space Mono',monospace;font-size:12px;line-height:1.8;color:var(--text2);}
+.email-template .field-label{color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.5px;display:block;margin-top:8px;}
+.email-template .field-val{color:var(--text);display:block;margin-bottom:6px;}
 
 /* CONTACT */
 .contact-card{background:var(--surface);border:1px solid var(--border2);border-radius:16px;padding:24px;margin-top:8px;}
@@ -96,9 +118,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 24p
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="userguide.html">User Guide</a>
-      <a href="privacy.html" class="active">Privacy</a>
-      <a href="delete-data.html">Delete Data</a>
-      <a href="https://github.com/markeumir" target="_blank">GitHub</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="delete-data.html" class="active">Delete Data</a>
+      <a href="https://github.com/mirodigitaltools" target="_blank">GitHub</a>
     </div>
   </div>
 </nav>
@@ -106,183 +128,142 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 24p
 <div class="page-wrap">
 
   <div class="page-header">
-    <div class="label">Legal</div>
-    <h1>Privacy Policy</h1>
-    <p>SmartCart Shopper is designed from the ground up to protect your privacy. This policy explains exactly what data is collected, where it goes, and who can see it. The short answer: everything stays on your device.</p>
-    <div class="last-updated">Last updated: 14 August 2026 · Version 6.0</div>
+    <div class="label">Privacy &amp; Data Rights</div>
+    <h1>Data Deletion</h1>
+    <p>SmartCart Shopper stores all your data locally on your device. You are in full control — there is no account to delete and no server to contact for your shopping data. This page explains every way to clear your data, and what to do if you have a Pro purchase record held by RevenueCat.</p>
+    <div class="last-updated">Last updated: 14 August 2026 · App: SmartCart Shopper · Package: com.mirodigitaltools.smartcartshopper</div>
   </div>
 
   <!-- SUMMARY CARDS -->
   <div class="summary-grid">
-    <div class="sum-card good"><div class="sum-ico">✅</div><div><div class="sum-ttl">No data collected</div><div class="sum-txt">We collect no personal information, usage data or analytics.</div></div></div>
-    <div class="sum-card good"><div class="sum-ico">📵</div><div><div class="sum-ttl">No ads or trackers</div><div class="sum-txt">Zero advertising SDKs, zero third-party analytics, zero tracking pixels.</div></div></div>
-    <div class="sum-card good"><div class="sum-ico">📱</div><div><div class="sum-ttl">On-device only</div><div class="sum-txt">Your shopping list, prices and history never leave your phone.</div></div></div>
-    <div class="sum-card good"><div class="sum-ico">📷</div><div><div class="sum-ttl">Camera — scan only</div><div class="sum-txt">Camera is used to scan barcodes. No photos taken or stored.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">🙅</div><div><div class="sum-ttl">No account required</div><div class="sum-txt">SmartCart never asks you to create an account.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">📱</div><div><div class="sum-ttl">All data on-device</div><div class="sum-txt">Your shopping data, history and settings live only on your phone.</div></div></div>
+    <div class="sum-card good"><div class="sum-ico">⚡</div><div><div class="sum-ttl">Instant self-deletion</div><div class="sum-txt">Clear everything immediately inside the app or by uninstalling.</div></div></div>
+    <div class="sum-card amber"><div class="sum-ico">🧾</div><div><div class="sum-ttl">Pro purchase record</div><div class="sum-txt">RevenueCat may hold entitlement data if you purchased Pro.</div></div></div>
   </div>
 
-  <!-- 1. WHO WE ARE -->
-  <div class="policy-section" id="who">
-    <h2>1. Who We Are</h2>
-    <p>SmartCart Shopper is developed and maintained by <strong>Mark Eumir Turingan</strong>, operating under the brand <strong>MiRo Digital Tools</strong>, based in Berlin, Germany.</p>
-    <p>This privacy policy applies to all versions of SmartCart Shopper — the Google Play version, the External/web version, and any future releases.</p>
-  </div>
-
-  <!-- 2. WHAT DATA WE COLLECT -->
-  <div class="policy-section" id="data">
-    <h2>2. What Data We Collect</h2>
+  <!-- 1. NO ACCOUNT -->
+  <div class="policy-section" id="no-account">
+    <h2>1. No Account — Nothing to Delete on Our End</h2>
     <div class="green-box">
-      <p><strong>We do not collect, transmit or store any personal data on external servers.</strong></p>
+      <p><strong>SmartCart Shopper requires no registration, login, or account of any kind.</strong> We hold no personal data on any server — your name, email address, or any identifier is never collected by us.</p>
     </div>
-    <p>All data created while using SmartCart is stored exclusively in your device's local storage (localStorage and IndexedDB). This includes:</p>
-    <table class="data-table">
-      <tr><th>Data type</th><th>Where stored</th><th>Sent externally?</th></tr>
-      <tr><td>Shopping list items</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Price book entries</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Session history / receipts</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Budget settings</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Currency preference</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Offline database (Pro)</td><td>Device IndexedDB</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Pro unlock status</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-      <tr><td>Device ID (External version)</td><td>Device localStorage</td><td><span class="cross">✗ Never</span></td></tr>
-    </table>
+    <p>All app data — your shopping lists, price book, session history, budget settings, and currency preferences — is stored exclusively in your device's local storage. Deleting it from your device deletes it completely and permanently. There is no cloud copy to request removal of.</p>
   </div>
 
-  <!-- 3. CAMERA -->
-  <div class="policy-section" id="camera">
-    <h2>3. Camera Permission</h2>
-    <p>SmartCart requests camera access for one purpose only: <strong>scanning barcodes</strong>.</p>
+  <!-- 2. DELETE YOUR DATA INSTANTLY -->
+  <div class="policy-section" id="self-delete">
+    <h2>2. Delete Your Data Instantly (No Email Needed)</h2>
+    <p>Choose whichever method works best for you. Both are immediate and irreversible.</p>
+
+    <div class="method-card">
+      <div class="method-header">
+        <span class="method-badge badge-instant">INSTANT · IN-APP</span>
+        <div class="method-title">Option A — Clear All Data inside SmartCart</div>
+      </div>
+      <p>This removes all shopping data while keeping your app settings and Pro status intact.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-body">Open <strong>SmartCart Shopper</strong> on your device.</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">Tap the <strong>About</strong> tab at the bottom of the screen.</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body">Select <strong>Backup &amp; Restore</strong>.</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body">Tap <strong>Clear All Data</strong> and confirm when prompted.</div></div>
+      </div>
+      <div class="green-box" style="margin-top:4px;">
+        <p>✅ All shopping lists, session history, price book entries, and budget data are erased immediately.</p>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <span class="method-badge badge-instant">INSTANT · SYSTEM</span>
+        <div class="method-title">Option B — Clear via Android App Settings</div>
+      </div>
+      <p>This wipes everything — shopping data, settings, and cached files — as if the app was freshly installed.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-body">Go to your device <strong>Settings</strong>.</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">Tap <strong>Apps</strong> (or Application Manager on some devices).</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body">Find and tap <strong>SmartCart Shopper</strong>.</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body">Tap <strong>Storage</strong>, then tap <strong>Clear Data</strong>.</div></div>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <span class="method-badge badge-instant">INSTANT · UNINSTALL</span>
+        <div class="method-title">Option C — Uninstall the App</div>
+      </div>
+      <p>Uninstalling SmartCart Shopper removes the app and all locally stored data from your device completely. Long-press the app icon and select <strong>Uninstall</strong>, or go to <strong>Settings → Apps → SmartCart Shopper → Uninstall</strong>.</p>
+      <div class="amber-box">If you uninstall and reinstall later, all previous shopping data will be gone. Export a backup first if you want to restore your data.</div>
+    </div>
+  </div>
+
+  <!-- 3. PRO PURCHASE / REVENUECAT -->
+  <div class="policy-section" id="revenuecat">
+    <h2>3. Pro Purchase &amp; RevenueCat Entitlement Data</h2>
+    <p>If you purchased <strong>SmartCart Pro</strong> through Google Play, your purchase entitlement is verified via <strong>RevenueCat</strong>. RevenueCat may hold a minimal purchase record linked to your Google Play App User ID or purchase email.</p>
+    <div class="amber-box">
+      <strong>Note:</strong> SmartCart itself holds no copy of this data. The record exists only on RevenueCat's servers for the purpose of restoring your Pro access across reinstalls. Clearing app data (Methods A, B, C above) does <strong>not</strong> remove this RevenueCat record.
+    </div>
+    <p>To request deletion of your RevenueCat purchase entitlement record, email us using the template in Section 4 below. We will forward your deletion request to RevenueCat on your behalf within 14 days.</p>
+    <p>Please be aware that deleting this record means your Pro purchase can no longer be restored. If you reinstall SmartCart Shopper, you will not be able to recover your Pro access without repurchasing.</p>
+    <p>For full details on what RevenueCat stores and your rights, see <a href="https://www.revenuecat.com/privacy" style="color:#A78BFA;" target="_blank">RevenueCat's Privacy Policy</a>.</p>
+  </div>
+
+  <!-- 4. EMAIL REQUEST -->
+  <div class="policy-section" id="email-request">
+    <h2>4. Email Deletion Request (for RevenueCat Data)</h2>
+    <p>If you purchased Pro and want your RevenueCat entitlement record deleted, send us an email. Please include the following information so we can locate and action your request accurately:</p>
     <ul>
-      <li>The camera is activated only when you explicitly tap the scan button.</li>
-      <li>No photos, video or screenshots are taken, saved or transmitted.</li>
-      <li>The camera feed is processed entirely on-device, frame by frame, to detect barcode patterns.</li>
-      <li>The camera stops as soon as you close the scanner or navigate away.</li>
+      <li><strong>App name:</strong> SmartCart Shopper</li>
+      <li><strong>Package ID:</strong> <code style="font-family:'Space Mono',monospace;font-size:12px;background:var(--surface2);padding:2px 7px;border-radius:5px;color:#A78BFA;">com.mirodigitaltools.smartcartshopper</code></li>
+      <li><strong>RevenueCat App User ID</strong> (if known — visible in the app under About → App Info) <em>and/or</em></li>
+      <li><strong>Google Play purchase email address</strong> associated with the Pro purchase</li>
     </ul>
-    <div class="amber-box">Camera permission can be revoked at any time in your device Settings → Apps → SmartCart → Permissions.</div>
+
+    <p style="margin-top:18px;">Use the template below as a starting point:</p>
+    <div class="email-template">
+      <span class="field-label">To</span>
+      <span class="field-val">mygmail@markeumir.xyz</span>
+      <span class="field-label">Subject</span>
+      <span class="field-val">Data Deletion Request — SmartCart Shopper</span>
+      <span class="field-label">Body</span>
+      <span class="field-val">Hello,<br><br>
+I am requesting deletion of my data associated with the following:<br><br>
+• App name: SmartCart Shopper<br>
+• Package ID: com.mirodigitaltools.smartcartshopper<br>
+• RevenueCat App User ID: [your ID here, if known]<br>
+• Google Play purchase email: [the email used for purchase]<br><br>
+Please delete my purchase entitlement record held by RevenueCat.<br><br>
+I understand this will prevent Pro access from being restored in future reinstalls.<br><br>
+Thank you.</span>
+    </div>
+
+    <div class="purple-box">
+      <strong>Where to find your RevenueCat App User ID:</strong> Open SmartCart Shopper → About tab → scroll to App Info. It will be listed there if applicable.
+    </div>
   </div>
 
-  <!-- 4. THIRD-PARTY SERVICES -->
-  <div class="policy-section" id="third-party">
-    <h2>4. Third-Party Services</h2>
-    <p>SmartCart contacts external services only for product lookup and live exchange rates. <strong>No personal data is included in any of these requests.</strong></p>
-    <table class="data-table">
-      <tr><th>Service</th><th>Purpose</th><th>Data sent</th><th>Privacy policy</th></tr>
-      <tr>
-        <td>Open Food Facts</td>
-        <td>Food product lookup by barcode</td>
-        <td>Barcode number only</td>
-        <td><a href="https://world.openfoodfacts.org/privacy" style="color:#A78BFA" target="_blank">openfoodfacts.org/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Open Beauty Facts</td>
-        <td>Beauty/cosmetics lookup by barcode</td>
-        <td>Barcode number only</td>
-        <td><a href="https://world.openbeautyfacts.org" style="color:#A78BFA" target="_blank">openbeautyfacts.org</a></td>
-      </tr>
-      <tr>
-        <td>UPC Item DB</td>
-        <td>General product lookup by barcode</td>
-        <td>Barcode number only</td>
-        <td><a href="https://www.upcitemdb.com/privacy" style="color:#A78BFA" target="_blank">upcitemdb.com/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Frankfurter.app</td>
-        <td>Live FX exchange rates (Pro, if enabled)</td>
-        <td>Currency code only</td>
-        <td><a href="https://www.frankfurter.app" style="color:#A78BFA" target="_blank">frankfurter.app</a></td>
-      </tr>
-      <tr>
-        <td>GitHub Releases</td>
-        <td>Offline database download (Pro)</td>
-        <td>None (standard HTTPS download)</td>
-        <td><a href="https://docs.github.com/en/site-policy/privacy-policies" style="color:#A78BFA" target="_blank">github.com privacy</a></td>
-      </tr>
-    </table>
-    <p>Barcode numbers are not personal data and cannot be used to identify you. No IP address, device identifier or session token is ever included in API requests.</p>
-  </div>
-
-  <!-- 5. GOOGLE PLAY / REVENUECAT -->
-  <div class="policy-section" id="billing">
-    <h2>5. In-App Purchases (Google Play Version)</h2>
-    <p>Pro upgrades on the Google Play version are processed by <strong>Google Play Billing</strong> via <strong>RevenueCat</strong>. SmartCart does not handle payment information directly.</p>
-    <ul>
-      <li>Payment data is handled entirely by Google — see <a href="https://policies.google.com/privacy" style="color:#A78BFA" target="_blank">Google's Privacy Policy</a>.</li>
-      <li>RevenueCat receives a purchase token to verify entitlement — no personal data beyond what Google provides. See <a href="https://www.revenuecat.com/privacy" style="color:#A78BFA" target="_blank">RevenueCat's Privacy Policy</a>.</li>
-      <li>SmartCart stores only a local Pro status flag (true/false) on your device after a verified purchase.</li>
-    </ul>
-  </div>
-
-  <!-- 6. DEVICE ID (EXTERNAL) -->
-  <div class="policy-section" id="deviceid">
-    <h2>6. Device ID (External Version Only)</h2>
-    <p>The external version of SmartCart uses a locally generated Device ID to produce unlock codes for Pro activation.</p>
-    <ul>
-      <li>The Device ID is a <strong>randomly generated value</strong> created on first launch and stored only in your device's localStorage.</li>
-      <li>It is <strong>not</strong> derived from any hardware identifier, IMEI, MAC address or personal data.</li>
-      <li>The Device ID is only transmitted when <strong>you choose to share it</strong> with the developer to request a Pro unlock code.</li>
-      <li>The developer uses it solely to generate your unique unlock code — it is not stored, sold or shared.</li>
-    </ul>
-  </div>
-
-  <!-- 7. DATA RETENTION -->
-  <div class="policy-section" id="retention">
-    <h2>7. Data Retention &amp; Deletion</h2>
-    <p>Since all data is stored on your device, you are in complete control:</p>
-    <ul>
-      <li><strong>Clear app data:</strong> Device Settings → Apps → SmartCart → Storage → Clear Data. This removes everything instantly.</li>
-      <li><strong>Clear specific data:</strong> About tab → Backup &amp; Restore → Clear All Data removes your shopping data while keeping app settings.</li>
-      <li><strong>Uninstalling</strong> SmartCart removes all locally stored data.</li>
-    </ul>
-    <p>We hold no copies of your data on any server — deletion on your device is complete and final.</p>
-  </div>
-
-  <!-- 8. CHILDREN -->
-  <div class="policy-section" id="children">
-    <h2>8. Children's Privacy</h2>
-    <p>SmartCart Shopper does not knowingly collect any personal information from anyone, including children under the age of 13 (or 16 in the EU under GDPR). As no data is collected at all, the app is safe for all ages.</p>
-  </div>
-
-  <!-- 9. GDPR -->
-  <div class="policy-section" id="gdpr">
-    <h2>9. GDPR (EU Users)</h2>
-    <p>SmartCart is developed in Berlin, Germany and is designed to be GDPR-compliant by default. Because we collect no personal data, there is no data processing activity to declare under Articles 13/14 of the GDPR. Specifically:</p>
-    <ul>
-      <li>No lawful basis for processing is required — no processing occurs.</li>
-      <li>No Data Processing Agreement (DPA) is needed with third-party API providers, as only non-personal barcode numbers are transmitted.</li>
-      <li>You have full rights of access, rectification and erasure over your data — exercised entirely through the app itself.</li>
-    </ul>
-  </div>
-
-  <!-- 10. CHANGES -->
-  <div class="policy-section" id="changes">
-    <h2>10. Changes to This Policy</h2>
-    <p>If this privacy policy changes materially, the updated version will be posted at this URL and the "Last updated" date will be revised. Continued use of SmartCart after a policy change constitutes acceptance of the updated terms.</p>
-    <p>Given the no-data-collection nature of this app, significant changes are unlikely.</p>
-  </div>
-
-  <!-- DELETE DATA -->
-  <div class="policy-section" id="delete-data">
-    <h2>12. Data Deletion &amp; Your Right to Erasure</h2>
-    <p>Because all your shopping data is stored on your device, you are in full control of deleting it at any time. No email or request is needed for your app data.</p>
+  <!-- 5. PROCESSING TIMELINE -->
+  <div class="policy-section" id="timeline">
+    <h2>5. Processing Timeline &amp; GDPR Rights</h2>
+    <p>We aim to action all data deletion requests within <strong>14 days</strong> of receiving a complete request with sufficient identifying information. You will receive a confirmation email once the request has been processed.</p>
     <div class="green-box">
-      <p><strong>Instant in-app deletion:</strong> Open SmartCart Shopper → About tab → Backup &amp; Restore → <strong>Clear All Data</strong>. This removes all shopping lists, history and price book entries immediately.</p>
+      <p><strong>EU / GDPR users:</strong> You have the right to erasure of personal data under <strong>Article 17 of the GDPR</strong>. If you believe your request has not been handled correctly, you have the right to lodge a complaint with your local data protection authority. In Germany, this is the <strong>Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI)</strong>.</p>
     </div>
-    <p>You can also clear all data via <strong>Device Settings → Apps → SmartCart Shopper → Storage → Clear Data</strong>, or by simply uninstalling the app.</p>
-    <p>If you purchased Pro and want your <strong>RevenueCat purchase entitlement record</strong> deleted, you can submit an email request. See the full details on our dedicated page:</p>
-    <p style="margin-top:16px;">
-      <a href="delete-data.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--purple-l);border:1px solid var(--purple-b);color:#C4B5FD;font-size:14px;font-weight:700;padding:10px 20px;border-radius:10px;text-decoration:none;transition:background .15s;" onmouseover="this.style.background='rgba(124,58,237,0.28)'" onmouseout="this.style.background='var(--purple-l)'">🗑️ Data Deletion — Full Instructions →</a>
-    </p>
+    <p>Note: Because SmartCart Shopper collects no personal data directly, the only data subject to a formal GDPR Article 17 request is the RevenueCat purchase entitlement record described in Section 3. All other app data is on your device and under your direct control.</p>
   </div>
 
-  <!-- 11. CONTACT -->
+  <!-- 6. CONTACT -->
   <div class="policy-section" id="contact">
-    <h2>13. Contact</h2>
-    <p>Questions about this privacy policy or SmartCart's data practices? Get in touch:</p>
+    <h2>6. Contact</h2>
+    <p>Questions about your data, deletion requests, or anything else? Reach out directly:</p>
     <div class="contact-card">
       <h3>Mark Eumir Turingan — MiRo Digital Tools</h3>
-      <div class="contact-row">🌐 <a href="https://facebook.com/markeumir" target="_blank">facebook.com/markeumir</a></div>
-      <div class="contact-row">💙 <a href="mygmail@markeumir.xyz" target="_blank">Email: mygmail@markeumir.xyz</a></div>
-      <div class="contact-row">💻 <a href="https://github.com/markeumir" target="_blank">github.com/markeumir</a></div>
-      <div class="contact-row">📍 Philippines & Germany</div>
+      <div class="contact-row">✉️ <a href="mailto:mygmail@markeumir.xyz">mygmail@markeumir.xyz</a></div>
+      <div class="contact-row">🌐 <a href="https://www.facebook.com/markeumir" target="_blank">facebook.com/markeumir</a></div>
+      <div class="contact-row">🏢 <a href="https://www.facebook.com/mirodigitaltools" target="_blank">facebook.com/mirodigitaltools</a></div>
+      <div class="contact-row">💻 <a href="https://github.com/mirodigitaltools" target="_blank">github.com/mirodigitaltools</a></div>
+      <div class="contact-row">📍 Philippines &amp; Germany</div>
     </div>
   </div>
 
@@ -299,6 +280,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 24p
       <a href="userguide.html">User Guide</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="delete-data.html">Delete Data</a>
+      <a href="https://github.com/mirodigitaltools" target="_blank">GitHub</a>
     </div>
     <div class="footer-copy">© 2026 MiRo Digital Tools (Mark Eumir Turingan). All rights reserved.</div>
   </div>
